@@ -7,6 +7,6 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/container-queries")],
 }
 export default config
