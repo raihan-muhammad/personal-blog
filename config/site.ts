@@ -12,7 +12,7 @@ export interface SiteConfig {
 
 const siteConfig: SiteConfig = {
     siteName: "Raihan Blog",
-    description: "A personal blog of me",
+    description: "As good as humans are those that benefit others",
     currentlyAt: 'Indonesia',
     socialLinks: {
         youtube: 'https://www.youtube.com/c/raihanMuhammad',
