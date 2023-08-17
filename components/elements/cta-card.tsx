@@ -14,9 +14,9 @@ const CtaCard = () => {
                 <div className="font-medium text-lg">#letscoding</div>
                 <h3 className="text-4xl font-semibold mt-3">Let&apos;s code with me!</h3>
                 <p className="mt-2 text-lg max-w-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sapiente vitae, odit, corrupti delectus necessitatibus saepe laboriosam nulla eaque ab minus eligendi quia </p>
-                <form className="mt-6 flex items-center gap-2">
-                    <input type="text" placeholder="Write your email" className="bg-white/80 rounded-md py-2 px-3 placeholder:text-sm outline-none focus:ring-2 ring-neutral-600" />
-                    <button className="bg-neutral-900 rounded-md py-2 px-3 text-neutral-200">Sign Up</button>
+                <form className="mt-6 flex items-center gap-2 w-full">
+                    <input type="text" placeholder="Write your email" className="bg-white/80 rounded-md py-2 px-3 placeholder:text-sm outline-none focus:ring-2 ring-neutral-600 w-full whitespace-nowrap md:w-auto" />
+                    <button className="bg-neutral-900 rounded-md whitespace-nowrap py-2 px-3 text-neutral-200">Sign Up</button>
                 </form>
             </div>
         </section>

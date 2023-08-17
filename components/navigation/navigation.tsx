@@ -3,7 +3,7 @@ import PaddingContainer from "../layout/padding-container";
 
 const Navigation = () => {
     return (
-        <section className="border-b sticky top-0 right-0 left-0 bg-white bg-opacity-90 backdrop-blur-md">
+        <section className="border-b sticky top-0 right-0 left-0 bg-white bg-opacity-90 backdrop-blur-md z-30">
             <PaddingContainer>
                 <div className="flex items-center justify-between py-5">
                     <Link className="text-lg font-bold" href='/'>Raihan Blog</Link>
