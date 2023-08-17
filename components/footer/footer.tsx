@@ -1,6 +1,7 @@
 import siteConfig from "@/config/site";
 import PaddingContainer from "../layout/padding-container";
 import Link from "next/link";
+import SocialLinks from "../elements/social-links";
 
 const Footer = () => {
     return(
@@ -14,10 +15,15 @@ const Footer = () => {
                 <section className="flex flex-wrap justify-between gap-4 mt-6">
                     <div>
                         <p className="text-lg font-medium">Let&apos;s Connect!</p>
-                        <div>Social Links</div>
+                        <div className="flex items-center gap-3 text-neutral-600 mt-2">
+                            <SocialLinks platform="instagram" link={siteConfig.socialLinks.instagram}/>
+                            <SocialLinks platform="linkedin" link={siteConfig.socialLinks.linkedin}/>
+                            <SocialLinks platform="youtube" link={siteConfig.socialLinks.youtube}/>
+                            <SocialLinks platform="github" link={siteConfig.socialLinks.github}/>
+                        </div>
                     </div>
                     <div>
-                        <p className="text-sm text-neutral-400">Currently At</p>
+                        <p className="text-sm text-neutral-400 text-right">Currently At</p>
                         <div className="flex items-center gap-2 px-3 py-2 bg-white rounded-md shadow-md">
                             <div className="w-2 h-2 rounded-full bg-emerald-400" />
                             {siteConfig.currentlyAt}
