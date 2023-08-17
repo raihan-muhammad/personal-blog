@@ -6,7 +6,7 @@ export const DUMMY_POSTS: Post[] = [
     title: "A lovely green city: New York",
     description:
       "New York is a city in the United States of America. It is the most populous city in the United States.",
-    category: { id: "1", title: "Cities" },
+    category: { id: "1", title: "Javascript" },
     author: { id: "1", first_name: "John", last_name: "Doe" },
     slug: "a-lovely-green-city-new-york",
     image:
@@ -20,12 +20,12 @@ export const DUMMY_POSTS: Post[] = [
     title: "The vibrant city of Paris",
     description:
       "Paris is the capital and most populous city of France. It is located on the Seine River, in the north of the country, at the heart of the Île-de-France region.",
-    category: { id: "1", title: "Cities" },
+    category: { id: "1", title: "Javascript" },
     author: { id: "1", first_name: "John", last_name: "Doe" },
     slug: "the-vibrant-city-of-paris",
     image:
       "https://images.unsplash.com/photo-1448906654166-444d494666b3?ixid=MnwzODU2NTF8MHwxfHNlYXJjaHwyNXx8bG9uZG9ufGVufDB8fHx8MTY3MDI3MzM3Ng&ixlib=rb-4.0.3",
-    body: "Paris is known for its art, culture, and history. The city is home to many iconic landmarks such as the Eiffel Tower, the Louvre Museum, and the Notre-Dame Cathedral. It is also known for its fashion and gastronomy, with numerous world-renowned restaurants and luxury fashion houses. Paris is a global center for business, finance, and politics, and is considered one of the world's leading cities in these fields.",
+    body: "Paris is known for its art, culture, and history. The city is home to many iconic landmarks such as the Eiffel Tower, the Louvre Museum, and the Notre-Dame Cathedral. It is also known for its fashion and gastronomy, with numerous world-renowned restaurants and luxury fashion houses. Paris is a global center for business, finance, and politics, and is considered one of the world's leading Javascript in these fields.",
     date_created: "2021-07-02T00:00:00.000Z",
     date_updated: "2021-07-02T00:00:00.000Z",
   },
@@ -34,7 +34,7 @@ export const DUMMY_POSTS: Post[] = [
     title: "The majestic city of London",
     description:
       "London is the capital and largest city of England and the United Kingdom. It is located on the River Thames in the south-east of England.",
-    category: { id: "1", title: "Cities" },
+    category: { id: "1", title: "Javascript" },
     author: { id: "1", first_name: "John", last_name: "Doe" },
     slug: "the-majestic-city-of-london",
     image:
@@ -48,7 +48,7 @@ export const DUMMY_POSTS: Post[] = [
     title: "The great adventure of the Amazon",
     description:
       "The Amazon is the largest river in the world. It is located in South America and flows through Brazil, Peru, Colombia and etc.",
-    category: { id: "2", title: "Experiences" },
+    category: { id: "2", title: "Docker" },
     author: { id: "1", first_name: "John", last_name: "Doe" },
     slug: "the-great-adventure-of-the-amazon",
     image:
@@ -62,12 +62,12 @@ export const DUMMY_POSTS: Post[] = [
     title: "Journey to the infinite sky: Cappadocia",
     description:
       "Cappadocia is a region in central Turkey. It is known for its unique geological features, such as the fairy chimneys, which are cone-shaped rock formations.",
-    category: { id: "2", title: "Experiences" },
+    category: { id: "2", title: "Docker" },
     author: { id: "1", first_name: "John", last_name: "Doe" },
     slug: "let-the-wind-take-you-to-the-infinite-sky-cappadocia",
     image:
       "https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?ixid=MnwzODU2NTF8MHwxfHNlYXJjaHwxN3x8Q2FwcGFkb2NpYXxlbnwwfHx8fDE2NzAzMjI2OTE&ixlib=rb-4.0.3",
-    body: "Cappadocia is a region in central Turkey. It is known for its unique geological features, such as the fairy chimneys, which are cone-shaped rock formations. The region is also known for its cave churches, underground cities, and cave dwellings. Cappadocia is a popular tourist destination, with many visitors coming to see the region's natural wonders.",
+    body: "Cappadocia is a region in central Turkey. It is known for its unique geological features, such as the fairy chimneys, which are cone-shaped rock formations. The region is also known for its cave churches, underground Javascript, and cave dwellings. Cappadocia is a popular tourist destination, with many visitors coming to see the region's natural wonders.",
     date_created: "2021-07-05T00:00:00.000Z",
     date_updated: "2021-07-05T00:00:00.000Z",
   },
@@ -76,7 +76,7 @@ export const DUMMY_POSTS: Post[] = [
     title: "Joining the elephants in the wild: Thailand",
     description:
       "Thailand is a country in Southeast Asia. It is known for its tropical beaches, opulent royal palaces, ancient ruins, and ornate temples displaying figures of Buddha.",
-    category: { id: "2", title: "Experiences" },
+    category: { id: "2", title: "Docker" },
     author: { id: "1", first_name: "John", last_name: "Doe" },
     slug: "joining-the-elephants-in-the-wild-thailand",
     image:
@@ -90,16 +90,16 @@ export const DUMMY_POSTS: Post[] = [
 export const DUMMY_CATEGORIES: Category[] = [
   {
     id: "1",
-    title: "Cities",
-    slug: "cities",
+    title: "Javascript",
+    slug: "Javascript",
     description:
       "Travel every city that I've been with me! I'll be sharing hidden gems in every city.",
   },
   {
     id: "2",
-    title: "Experiences",
-    slug: "experiences",
+    title: "Docker",
+    slug: "Docker",
     description:
-      "Experience the world with me! I'll be sharing my adventures and experiences in every country.",
+      "Experience the world with me! I'll be sharing my adventures and Docker in every country.",
   },
 ];
