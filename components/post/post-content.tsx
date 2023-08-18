@@ -8,7 +8,7 @@ interface PostContentProps {
 const PostContent = ({ post }: PostContentProps) => {
     return (
         <section className="space-y-2">
-            <div className="text-sm flex gap-2 items-center text-neutral-400">
+            <div className="text-xs md:text-sm leading-snug flex gap-2 items-center text-neutral-400">
                 <div className={`
                     font-medium ${post.category.title === 'Javascript' ? "text-emerald-600": "text-blue-600"}
                 `}>{post.category.title}</div>

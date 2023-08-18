@@ -9,11 +9,11 @@ export default function Home() {
     <>
       <PaddingContainer>
         <main className="h-auto space-y-10">
-            <PostCard post={DUMMY_POSTS[0]}/>
-            <PostList posts={DUMMY_POSTS.filter((_post, i) => i > 0 && i < 3)}/>
+            {/* <PostCard post={DUMMY_POSTS[0]}/> */}
+            <PostList posts={DUMMY_POSTS.filter((_post, i) => i > 0 && i < 4)}/>
             <CtaCard/>
-            <PostCard reverse post={DUMMY_POSTS[3]}/>
-            <PostList posts={DUMMY_POSTS.filter((_post, i) => i > 3 && i < 6)}/>
+            {/* <PostCard reverse post={DUMMY_POSTS[3]}/> */}
+            <PostList posts={DUMMY_POSTS.filter((_post, i) => i > 3 && i < 9)}/>
         </main>
       </PaddingContainer>
     </>
