@@ -9,7 +9,7 @@ interface PostContentProps {
 const PostContent = ({ post, isPostPage = false }: PostContentProps) => {
     return (
         <section className="space-y-2">
-            <div className={`text-xs md:text-sm leading-snug flex gap-2 items-center text-neutral-400 ${isPostPage ? "text-sm": "text-xs @md:text-sm"}`}>
+            <div className={`text-xs md:text-sm leading-snug flex gap-2 items-center flex-wrap text-neutral-400 ${isPostPage ? "text-sm": "text-xs @md:text-sm"}`}>
                 <div className={`
                     font-medium ${post.category.title === 'Javascript' ? "text-emerald-600": "text-blue-600"}
                 `}>{post.category.title}</div>

@@ -91,14 +91,14 @@ export const DUMMY_CATEGORIES: Category[] = [
   {
     id: "1",
     title: "Javascript",
-    slug: "Javascript",
+    slug: "javascript",
     description:
       "Travel every city that I've been with me! I'll be sharing hidden gems in every city.",
   },
   {
     id: "2",
     title: "Docker",
-    slug: "Docker",
+    slug: "docker",
     description:
       "Experience the world with me! I'll be sharing my adventures and Docker in every country.",
   },

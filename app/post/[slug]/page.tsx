@@ -1,6 +1,8 @@
 import { DUMMY_POSTS } from "@/DUMMY_DATA";
+import CtaCard from "@/components/elements/cta-card";
 import SocialLinks from "@/components/elements/social-links";
 import PaddingContainer from "@/components/layout/padding-container";
+import PostBody from "@/components/post/post-body";
 import PostHero from "@/components/post/post-hero";
 import { notFound } from 'next/navigation'
 
@@ -17,10 +19,12 @@ const Page = ({ params }: { params: { slug: string }}) => {
     if(!posts) notFound();
     return (
         <PaddingContainer>
-            <PostHero post={posts}/>
-                <div className="mt-10 flex gap-10">
+            <div className="space-y-10">
+                <PostHero post={posts}/>
+                <div className="flex flex-col md:flex-row gap-10">
                     <div className="relative">
-                        <div className="sticky flex flex-col gap-5 top-20">
+                        <div className="sticky flex items-center gap-5 md:flex-col top-20">
+                            <div className="font-medium md:hidden">Share this content:</div>
                             <SocialLinks 
                                 isShareURL
                                 platform="instagram" 
@@ -42,7 +46,9 @@ const Page = ({ params }: { params: { slug: string }}) => {
                             />
                         </div>
                     </div>
-                <div className="h-[1000px] bg-slate-200 w-full">Post Body</div>
+                    <PostBody body={posts.body} />
+                </div>
+                <CtaCard/>
             </div>
         </PaddingContainer>
     )
