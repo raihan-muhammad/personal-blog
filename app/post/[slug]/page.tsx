@@ -1,4 +1,5 @@
 import { DUMMY_POSTS } from "@/DUMMY_DATA";
+import SocialLinks from "@/components/elements/social-links";
 import PaddingContainer from "@/components/layout/padding-container";
 import PostHero from "@/components/post/post-hero";
 import { notFound } from 'next/navigation'
@@ -19,7 +20,27 @@ const Page = ({ params }: { params: { slug: string }}) => {
             <PostHero post={posts}/>
                 <div className="mt-10 flex gap-10">
                     <div className="relative">
-                        <div className="sticky top-20">Share</div>
+                        <div className="sticky flex flex-col gap-5 top-20">
+                            <SocialLinks 
+                                isShareURL
+                                platform="instagram" 
+                                link={`https://www.facebook.com/sharer/sharer.php?u=${"http://localhost:3000" + `/post/${posts.slug}`}`} />
+                            <SocialLinks 
+                                isShareURL
+                                platform="youtube" 
+                                link={`https://www.facebook.com/sharer/sharer.php?u=${"http://localhost:3000" + `/post/${posts.slug}`}`} 
+                            />
+                            <SocialLinks 
+                                isShareURL
+                                platform="linkedin" 
+                                link={`https://www.linkedin.com/shareArticle?mini=true&url=${"http://localhost:3000" + `/post/${posts.slug}`}`} 
+                            />
+                            <SocialLinks 
+                                isShareURL
+                                platform="github" 
+                                link={`https://www.facebook.com/sharer/sharer.php?u=${"http://localhost:3000" + `/post/${posts.slug}`}`} 
+                            />
+                        </div>
                     </div>
                 <div className="h-[1000px] bg-slate-200 w-full">Post Body</div>
             </div>
