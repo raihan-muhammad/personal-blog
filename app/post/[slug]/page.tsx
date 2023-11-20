@@ -24,21 +24,21 @@ const Page = ({ params }: { params: { slug: string }}) => {
                             <SocialLinks 
                                 isShareURL
                                 platform="instagram" 
-                                link={`https://www.facebook.com/sharer/sharer.php?u=${"http://localhost:3000" + `/post/${posts.slug}`}`} />
+                                link={`https://www.facebook.com/sharer/sharer.php?u=${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${posts.slug}`}`} />
                             <SocialLinks 
                                 isShareURL
                                 platform="youtube" 
-                                link={`https://www.facebook.com/sharer/sharer.php?u=${"http://localhost:3000" + `/post/${posts.slug}`}`} 
+                                link={`https://www.facebook.com/sharer/sharer.php?u=${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${posts.slug}`}`} 
                             />
                             <SocialLinks 
                                 isShareURL
                                 platform="linkedin" 
-                                link={`https://www.linkedin.com/shareArticle?mini=true&url=${"http://localhost:3000" + `/post/${posts.slug}`}`} 
+                                link={`https://www.linkedin.com/shareArticle?mini=true&url=${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${posts.slug}`}`} 
                             />
                             <SocialLinks 
                                 isShareURL
                                 platform="github" 
-                                link={`https://www.facebook.com/sharer/sharer.php?u=${"http://localhost:3000" + `/post/${posts.slug}`}`} 
+                                link={`https://www.facebook.com/sharer/sharer.php?u=${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${posts.slug}`}`} 
                             />
                         </div>
                     </div>
